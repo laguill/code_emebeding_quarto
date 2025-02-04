@@ -1,0 +1,21 @@
+project:
+  type: book
+
+book:
+  title: "Embed Python code chunk"
+  date: last-modified
+  chapters:
+    - index.qmd
+    - Notebook1.qmd
+    - Notebook2.qmd
+
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+
+
+
+

@@ -1,0 +1,23 @@
+---
+title: "Notebook1"
+---
+
+This notebook is used to import packages and dataset
+
+```{python}
+# | echo: true
+# | label: import-packages
+
+import pandas as pd
+import altair as alt
+import seaborn as sns
+from matplotlib import pyplot as plt
+
+penguins = sns.load_dataset("penguins")
+
+```
+
+```{python}
+# | label: species-counts
+penguins.groupby("species").size().reset_index(name="count")
+```

@@ -1,0 +1,16 @@
+---
+title: "Notebook2"
+---
+
+
+{{< embed Notebook1.qmd#import-packages echo=true >}}
+
+```{python}
+# | echo: true
+
+penguins.head()
+
+# Perform some analysis
+penguins.describe()
+
+```
